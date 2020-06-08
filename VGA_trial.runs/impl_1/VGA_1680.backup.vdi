@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec 18 19:06:03 2017
+# Process ID: 1680
+# Current directory: C:/Users/canbe/Desktop/trial/VGA_trial/VGA_trial.runs/impl_1
+# Command line: vivado.exe -log VGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGA.tcl -notrace
+# Log file: C:/Users/canbe/Desktop/trial/VGA_trial/VGA_trial.runs/impl_1/VGA.vdi
+# Journal file: C:/Users/canbe/Desktop/trial/VGA_trial/VGA_trial.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source VGA.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "VGA.tcl" line 46)
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 19:06:06 2017...

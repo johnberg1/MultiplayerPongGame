@@ -1,0 +1,98 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Tue Dec 19 09:21:14 2017
+| Host         : DESKTOP-147MREP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_control_sets_placed.rpt
+| Design       : VGA
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |   124 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             116 |           53 |
+| No           | No                    | Yes                    |              40 |           12 |
+| No           | Yes                   | No                     |             102 |           35 |
+| Yes          | No                    | No                     |              21 |            8 |
+| Yes          | No                    | Yes                    |              23 |           10 |
+| Yes          | Yes                   | No                     |              14 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+--------------------------+---------------------------+------------------+----------------+
+|        Clock Signal        |       Enable Signal      |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------------------+--------------------------+---------------------------+------------------+----------------+
+|  C1/DRAW4_reg_i_2_n_0      |                          |                           |                1 |              1 |
+| ~C1/DRAW5_reg_i_7_n_0      |                          |                           |                1 |              1 |
+|  C1/DRAW6_reg_i_2_n_0      |                          |                           |                1 |              1 |
+|  C1/p_0_in                 |                          |                           |                1 |              1 |
+|  ballSpeedX_reg[7]_i_3_n_0 |                          |                           |                1 |              1 |
+|  CLOCK_IBUF_BUFG           |                          | C1/HSYNC0                 |                1 |              1 |
+|  CLOCK_IBUF_BUFG           |                          | C1/VSYNC0                 |                1 |              1 |
+|  C1/LED_BCD_reg[2]_i_2_n_0 |                          |                           |                1 |              3 |
+|  CLOCK_IBUF_BUFG           | C1/R[3]_i_2_n_0          | C1/R[3]_i_1_n_0           |                1 |              4 |
+|  ballSpeedX_reg[7]_i_3_n_0 | C1/ballSpeedX[7]_i_1_n_0 | C1/gameOver               |                1 |              5 |
+|  ballSpeedX_reg[7]_i_3_n_0 |                          | C1/bottomLifes[2]_i_2_n_0 |                3 |              6 |
+|  ballSpeedX_reg[7]_i_3_n_0 | C1/ballSpeedY[7]_i_1_n_0 | C1/gameOver               |                2 |              8 |
+|  CLOCK_IBUF_BUFG           |                          | C1/R1                     |                4 |              8 |
+|  ballSpeedX_reg[7]_i_3_n_0 | C1/BALL_Y[9]_i_1_n_0     | C1/gameOver               |                7 |             10 |
+|  CLOCK_IBUF_BUFG           | C1/DRAW_out1_i_1_n_0     | C1/VPOS                   |                5 |             10 |
+|  CLOCK_IBUF_BUFG           | C1/SQ_X1                 |                           |                4 |             10 |
+|  CLOCK_IBUF_BUFG           |                          | C1/DRAW_out1_i_1_n_0      |                5 |             11 |
+|  CLOCK_IBUF_BUFG           | C1/SQ_X2                 |                           |                4 |             11 |
+|  CLOCK_IBUF_BUFG           |                          | C1/random2[13]_i_1_n_0    |                4 |             13 |
+|  CLOCK_IBUF_BUFG           |                          | C1/random3[13]_i_1_n_0    |                5 |             14 |
+|  C1/OB_Y1_reg[9]_i_2_n_0   |                          |                           |               10 |             21 |
+|  C1/OB_Y2_reg[9]_i_1_n_0   |                          |                           |                9 |             21 |
+|  C1/OB_Y3_reg[9]_i_1_n_0   |                          |                           |               10 |             21 |
+|  C1/randomy_reg[9]_i_2_n_0 |                          |                           |               10 |             21 |
+|  CLOCK_IBUF_BUFG           |                          |                           |                8 |             24 |
+|  CLOCK_IBUF_BUFG           |                          | C1/random1[24]_i_1_n_0    |                7 |             25 |
+|  CLOCK_IBUF_BUFG           |                          | C1/temp                   |                8 |             29 |
+|  ballSpeedX_reg[7]_i_3_n_0 |                          | C1/gameOver               |                9 |             34 |
++----------------------------+--------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     7 |
+| 3      |                     1 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 8      |                     2 |
+| 10     |                     3 |
+| 11     |                     2 |
+| 13     |                     1 |
+| 14     |                     1 |
+| 16+    |                     8 |
++--------+-----------------------+
+
+
